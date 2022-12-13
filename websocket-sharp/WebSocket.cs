@@ -3245,11 +3245,11 @@ namespace WebSocketSharp
         throw new InvalidOperationException (msg);
       }
 
-      if (_retryCountForConnect >= _maxRetryCountForConnect) {
-        var msg = "A series of reconnecting has failed.";
+//       if (_retryCountForConnect >= _maxRetryCountForConnect) {
+//         var msg = "A series of reconnecting has failed.";
 
-        throw new InvalidOperationException (msg);
-      }
+//         throw new InvalidOperationException (msg);
+//       }
 
       var connected = connect ();
 
